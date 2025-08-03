@@ -1,0 +1,13 @@
+extends Area2D
+
+func _ready():
+	connect("body_entered", Callable(self, "_on_body_entered"))
+	connect("body_exited", Callable(self, "_on_body_exited"))
+
+func _on_body_entered(body):
+	if body.name == "CharacterBody2D" or body.name == "RigidBody2D":
+		Globals.pressed = true
+
+func _on_body_exited(body):
+	if body.name == "CharacterBody2D" or body.name == "RigidBody2D":
+		Globals.pressed = false
