@@ -2,11 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://httg7nm0svuc" path="res://Grass Ground Tileset.png" id="1_6phv7"]
 [ext_resource type="Texture2D" uid="uid://do38886wrnifs" path="res://Screen Shot 2025-07-30 at 1.11.55 PM.png" id="2_6phv7"]
-[ext_resource type="Script" uid="uid://dsnn2lr5ruvbe" path="res://rigid_body_2d.gd" id="4_mhe28"]
+[ext_resource type="Script" uid="uid://dsnn2lr5ruvbe" path="res://box.gd" id="4_mhe28"]
 [ext_resource type="Texture2D" uid="uid://o78smueol8ux" path="res://Screen_Shot_2025-08-01_at_11.36.58_AM-removebg-preview.png" id="5_26ho8"]
 [ext_resource type="Script" uid="uid://cgrsn6f06huvg" path="res://character_body_2d.gd" id="6_a1o74"]
 [ext_resource type="Texture2D" uid="uid://bvi6jdxyt5qwo" path="res://pixil-frame-0 (6).png" id="7_21y4i"]
-[ext_resource type="Script" uid="uid://chkquhxswmo1p" path="res://collision_shape_2d.gd" id="8_ap4fx"]
+[ext_resource type="Script" uid="uid://chkquhxswmo1p" path="res://end_goal.gd" id="8_ap4fx"]
 [ext_resource type="Texture2D" uid="uid://bted2axyhqtlj" path="res://Screen Shot 2025-08-01 at 11.47.06 AM.png" id="9_mhe28"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mhe28"]
@@ -257,5 +257,12 @@ offset_left = 0.207993
 offset_top = 22.92
 offset_right = -19.696
 offset_bottom = 11.576
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Press J to anchor boxes downward when switching gravity"
 
 [connection signal="body_entered" from="Node2D/Area2D" to="Node2D/Area2D/CollisionShape2D" method="_on_area_2d_body_entered"]

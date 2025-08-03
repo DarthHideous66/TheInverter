@@ -2,11 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://httg7nm0svuc" path="res://Grass Ground Tileset.png" id="1_u82o0"]
 [ext_resource type="Texture2D" uid="uid://do38886wrnifs" path="res://Screen Shot 2025-07-30 at 1.11.55 PM.png" id="2_u82o0"]
-[ext_resource type="Script" uid="uid://dsnn2lr5ruvbe" path="res://rigid_body_2d.gd" id="4_xc3ba"]
+[ext_resource type="Script" uid="uid://dsnn2lr5ruvbe" path="res://box.gd" id="4_xc3ba"]
 [ext_resource type="Texture2D" uid="uid://o78smueol8ux" path="res://Screen_Shot_2025-08-01_at_11.36.58_AM-removebg-preview.png" id="5_d05ww"]
 [ext_resource type="Script" uid="uid://cgrsn6f06huvg" path="res://character_body_2d.gd" id="6_xgxgo"]
 [ext_resource type="Texture2D" uid="uid://bvi6jdxyt5qwo" path="res://pixil-frame-0 (6).png" id="7_r5ei4"]
-[ext_resource type="Script" uid="uid://chkquhxswmo1p" path="res://collision_shape_2d.gd" id="7_u82o0"]
+[ext_resource type="Script" uid="uid://chkquhxswmo1p" path="res://end_goal.gd" id="7_u82o0"]
 [ext_resource type="Texture2D" uid="uid://bted2axyhqtlj" path="res://Screen Shot 2025-08-01 at 11.47.06 AM.png" id="8_rtx8d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rtx8d"]
@@ -205,5 +205,21 @@ script = ExtResource("7_u82o0")
 position = Vector2(9.53674e-07, 4.76837e-07)
 scale = Vector2(0.752475, 0.783505)
 texture = ExtResource("8_rtx8d")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.165
+anchor_top = 0.245
+anchor_right = 0.274
+anchor_bottom = 0.51
+offset_left = -417.08
+offset_top = -91.76
+offset_right = 489.352
+offset_bottom = -240.48
+text = "Use the keys WASD to move and press H to flip gravity. Don't touch the red boxes and reach the blue one. You can push crates around"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="body_entered" from="Node2D/Area2D" to="Node2D/Area2D/CollisionShape2D" method="_on_area_2d_body_entered"]
