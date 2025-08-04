@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://1njoiyj36mo1"]
+[gd_scene load_steps=28 format=4 uid="uid://1njoiyj36mo1"]
 
 [ext_resource type="Script" uid="uid://dsnn2lr5ruvbe" path="res://box.gd" id="1_a1x6b"]
 [ext_resource type="Texture2D" uid="uid://httg7nm0svuc" path="res://Grass Ground Tileset.png" id="1_qbcns"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://dyb8yg1r0mhjb" path="res://Screen_Shot_2025-08-03_at_7.49.04_PM-removebg-preview.png" id="10_agfg6"]
 [ext_resource type="Script" uid="uid://dtq3cj8nu0agy" path="res://door.gd" id="10_qbcns"]
 [ext_resource type="Texture2D" uid="uid://iwjwha36adaa" path="res://Screen Shot 2025-08-02 at 10.30.59 PM.png" id="11_hnva7"]
+[ext_resource type="Texture2D" uid="uid://cvfc1kad407ne" path="res://ChatGPT Image Aug 4, 2025, 12_55_01 PM.png" id="15_hnva7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ykrw3"]
 texture = ExtResource("1_qbcns")
@@ -382,5 +383,11 @@ offset_top = 1.0
 offset_right = 567.0
 offset_bottom = 24.0
 text = "Go on or put something on the button to open the door"
+
+[node name="ChatGptImageAug4,2025,125501Pm" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(518, 228)
+scale = Vector2(3.11979, 3.21094)
+texture = ExtResource("15_hnva7")
 
 [connection signal="body_entered" from="Node2D/Area2D" to="Node2D/Area2D/CollisionShape2D" method="_on_area_2d_body_entered"]

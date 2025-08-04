@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c8sohho7xq0mo"]
+[gd_scene load_steps=3 format=3 uid="uid://c8sohho7xq0mo"]
 
 [ext_resource type="Script" uid="uid://byiuubd80k32x" path="res://celebration.gd" id="1_qamks"]
+[ext_resource type="Texture2D" uid="uid://cvfc1kad407ne" path="res://ChatGPT Image Aug 4, 2025, 12_55_01 PM.png" id="2_5mh5p"]
 
 [node name="Celebration" type="Node2D"]
 script = ExtResource("1_qamks")
@@ -13,3 +14,7 @@ offset_bottom = 638.0
 text = "Congratulaions!!! You have beat the game!!	 Press R to reset the game from the beginning."
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="ChatGptImageAug4,2025,125501Pm" type="Sprite2D" parent="."]
+position = Vector2(650, 370)
+texture = ExtResource("2_5mh5p")

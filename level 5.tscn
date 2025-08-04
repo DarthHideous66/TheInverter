@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://tessiqocgq0g"]
+[gd_scene load_steps=28 format=4 uid="uid://tessiqocgq0g"]
 
 [ext_resource type="Script" uid="uid://dsnn2lr5ruvbe" path="res://box.gd" id="1_156t4"]
 [ext_resource type="Texture2D" uid="uid://httg7nm0svuc" path="res://Grass Ground Tileset.png" id="1_smwu5"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" uid="uid://k3ujaq0xbrue" path="res://button.gd" id="8_mdgr2"]
 [ext_resource type="Script" uid="uid://dtq3cj8nu0agy" path="res://door.gd" id="9_vrvc8"]
 [ext_resource type="Texture2D" uid="uid://iwjwha36adaa" path="res://Screen Shot 2025-08-02 at 10.30.59 PM.png" id="10_fpi6r"]
+[ext_resource type="Texture2D" uid="uid://cvfc1kad407ne" path="res://ChatGPT Image Aug 4, 2025, 12_55_01 PM.png" id="15_20pm8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vrvc8"]
 texture = ExtResource("1_smwu5")
@@ -380,5 +381,11 @@ offset_top = 1.0
 offset_right = 567.0
 offset_bottom = 24.0
 text = "Now, use all your skills to beat the final level!"
+
+[node name="ChatGptImageAug4,2025,125501Pm" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(447, 181.5)
+scale = Vector2(3.51432, 3.17871)
+texture = ExtResource("15_20pm8")
 
 [connection signal="body_entered" from="Node2D/Area2D" to="Node2D/Area2D/CollisionShape2D" method="_on_area_2d_body_entered"]

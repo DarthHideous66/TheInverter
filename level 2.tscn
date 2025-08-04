@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://dmaer48lktdr"]
+[gd_scene load_steps=18 format=4 uid="uid://dmaer48lktdr"]
 
 [ext_resource type="Texture2D" uid="uid://httg7nm0svuc" path="res://Grass Ground Tileset.png" id="1_6phv7"]
 [ext_resource type="Texture2D" uid="uid://do38886wrnifs" path="res://Screen Shot 2025-07-30 at 1.11.55 PM.png" id="2_6phv7"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://cgrsn6f06huvg" path="res://character_body_2d.gd" id="6_a1o74"]
 [ext_resource type="Texture2D" uid="uid://bvi6jdxyt5qwo" path="res://pixil-frame-0 (6).png" id="7_21y4i"]
 [ext_resource type="Script" uid="uid://chkquhxswmo1p" path="res://end_goal.gd" id="8_ap4fx"]
+[ext_resource type="Texture2D" uid="uid://cvfc1kad407ne" path="res://ChatGPT Image Aug 4, 2025, 12_55_01 PM.png" id="9_ap4fx"]
 [ext_resource type="Texture2D" uid="uid://bted2axyhqtlj" path="res://Screen Shot 2025-08-01 at 11.47.06 AM.png" id="9_mhe28"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mhe28"]
@@ -274,5 +275,11 @@ offset_top = 12.0
 offset_right = 971.0
 offset_bottom = 35.0
 text = "Press J to anchor boxes downward when switching gravity. You can also press r to reset the level"
+
+[node name="ChatGptImageAug4,2025,125501Pm" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(695.5, 142)
+scale = Vector2(1.29232, 1.21484)
+texture = ExtResource("9_ap4fx")
 
 [connection signal="body_entered" from="Node2D/Area2D" to="Node2D/Area2D/CollisionShape2D" method="_on_area_2d_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://con14q0ycmuio"]
+[gd_scene load_steps=18 format=4 uid="uid://con14q0ycmuio"]
 
 [ext_resource type="Texture2D" uid="uid://httg7nm0svuc" path="res://Grass Ground Tileset.png" id="1_u82o0"]
 [ext_resource type="Texture2D" uid="uid://do38886wrnifs" path="res://Screen Shot 2025-07-30 at 1.11.55 PM.png" id="2_u82o0"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://o78smueol8ux" path="res://Screen_Shot_2025-08-01_at_11.36.58_AM-removebg-preview.png" id="5_d05ww"]
 [ext_resource type="Script" uid="uid://cgrsn6f06huvg" path="res://character_body_2d.gd" id="6_xgxgo"]
 [ext_resource type="Texture2D" uid="uid://bvi6jdxyt5qwo" path="res://pixil-frame-0 (6).png" id="7_r5ei4"]
+[ext_resource type="Texture2D" uid="uid://cvfc1kad407ne" path="res://ChatGPT Image Aug 4, 2025, 12_55_01 PM.png" id="7_rtx8d"]
 [ext_resource type="Script" uid="uid://chkquhxswmo1p" path="res://end_goal.gd" id="7_u82o0"]
 [ext_resource type="Texture2D" uid="uid://bted2axyhqtlj" path="res://Screen Shot 2025-08-01 at 11.47.06 AM.png" id="8_rtx8d"]
 
@@ -240,6 +241,12 @@ offset_left = 0.463989
 offset_top = -0.0240173
 offset_right = 0.191986
 offset_bottom = 0.167999
+
+[node name="ChatGptImageAug4,2025,125501Pm" type="Sprite2D" parent="CharacterBody2D"]
+z_index = -1
+position = Vector2(282, -32.5)
+scale = Vector2(1.74609, 1.43848)
+texture = ExtResource("7_rtx8d")
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(772, 200)

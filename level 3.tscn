@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://bovnejt3pnxht"]
+[gd_scene load_steps=19 format=4 uid="uid://bovnejt3pnxht"]
 
 [ext_resource type="Texture2D" uid="uid://httg7nm0svuc" path="res://Grass Ground Tileset.png" id="1_yusrn"]
 [ext_resource type="Texture2D" uid="uid://d1pa2pa4tsfpo" path="res://enemy.png" id="2_yusrn"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bvi6jdxyt5qwo" path="res://pixil-frame-0 (6).png" id="7_nsj5u"]
 [ext_resource type="Script" uid="uid://chkquhxswmo1p" path="res://end_goal.gd" id="8_3i8xw"]
 [ext_resource type="Texture2D" uid="uid://bted2axyhqtlj" path="res://Screen Shot 2025-08-01 at 11.47.06 AM.png" id="9_36kq6"]
+[ext_resource type="Texture2D" uid="uid://cvfc1kad407ne" path="res://ChatGPT Image Aug 4, 2025, 12_55_01 PM.png" id="10_axdus"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_axdus"]
 texture = ExtResource("1_yusrn")
@@ -254,5 +255,11 @@ offset_top = 4.0
 offset_right = 432.0
 offset_bottom = 27.0
 text = "Press G to stop time"
+
+[node name="ChatGptImageAug4,2025,125501Pm" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(730, 325)
+scale = Vector2(1.94922, 1.73633)
+texture = ExtResource("10_axdus")
 
 [connection signal="body_entered" from="Node2D/Area2D" to="Node2D/Area2D/CollisionShape2D" method="_on_area_2d_body_entered"]
