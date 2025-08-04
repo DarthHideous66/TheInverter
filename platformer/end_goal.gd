@@ -1,4 +1,5 @@
 extends CollisionShape2D
+
 var current_scene_name = ""
 
 func _ready():
@@ -17,7 +18,10 @@ func _on_body_entered(body):
 			get_tree().change_scene_to_file("res://level 2.tscn")
 		elif current_scene_name == "Level2":
 			get_tree().change_scene_to_file("res://level 3.tscn")
-			
 		elif current_scene_name == "Level3":
 			get_tree().change_scene_to_file("res://level 4.tscn")
-			
+
+func _process(delta):
+	if Input.is_action_just_pressed("reset"):
+		get_tree().reload_current_scene()
+		Globals.gravity_sign = 1

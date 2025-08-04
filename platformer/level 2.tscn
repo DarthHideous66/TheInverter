@@ -258,4 +258,21 @@ offset_top = 22.92
 offset_right = -19.696
 offset_bottom = 11.576
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 228.0
+offset_top = 12.0
+offset_right = 971.0
+offset_bottom = 35.0
+text = "Press J to anchor boxes downward when switching gravity. You can also press r to reset the level"
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer2"]
+offset_left = 165.0
+offset_top = 55.0
+offset_right = 234.0
+offset_bottom = 91.0
+
 [connection signal="body_entered" from="Node2D/Area2D" to="Node2D/Area2D/CollisionShape2D" method="_on_area_2d_body_entered"]
