@@ -13,6 +13,8 @@ func _ready():
 	
 
 func _physics_process(delta: float) -> void:
+	$CanvasLayer2/Label.text = "You have %d lives left" % [5 - Globals.deaths]
+
 	
 	if alive:
 		velocity.y += GRAVITY * delta
@@ -57,7 +59,7 @@ func _physics_process(delta: float) -> void:
 
 
 func game_over():
-	print("GAME OVER")
+	print("GAME OVER Press R to reset")
 
 	$CanvasLayer/Label.text = "GAME OVER"
 	$CanvasLayer/Label.visible = true
