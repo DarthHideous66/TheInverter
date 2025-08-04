@@ -254,7 +254,9 @@ offset_left = -74.08
 offset_top = -117.76
 offset_right = 832.352
 offset_bottom = -266.48
-text = "Use the keys WASD to move and press H to flip gravity. Don't touch the red boxes and reach the blue one. You can push crates around."
+text = "Use the keys WASD to move and press H to flip gravity. Don't touch the red boxes and reach the blue one. You can push crates around.
+
+Also, if you die 5 times, the game resets"
 horizontal_alignment = 1
 vertical_alignment = 1
 

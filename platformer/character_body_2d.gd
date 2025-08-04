@@ -61,4 +61,6 @@ func game_over():
 
 	$CanvasLayer/Label.text = "GAME OVER"
 	$CanvasLayer/Label.visible = true
+	Globals.deaths += 1
+	
 	set_physics_process(false)

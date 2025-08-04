@@ -25,6 +25,5 @@ func _physics_process(_delta):
 		linear_velocity.x = 0
 
 	else:
-		# Normal gravity applied
 		var gravity_force = Globals.gravity_sign * 1500.0 * mass
 		apply_central_force(Vector2(0, gravity_force))
