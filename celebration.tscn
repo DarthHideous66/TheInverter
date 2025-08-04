@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8sohho7xq0mo"]
+
+[ext_resource type="Script" uid="uid://byiuubd80k32x" path="res://celebration.gd" id="1_qamks"]
+
+[node name="Celebration" type="Node2D"]
+script = ExtResource("1_qamks")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_right = 1152.0
+offset_bottom = 638.0
+text = "Congratulaions!!! You have beat the game!!	 Press R to reset the game from the beginning."
+horizontal_alignment = 1
+vertical_alignment = 1

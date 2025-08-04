@@ -16,12 +16,27 @@ func _on_body_entered(body):
 	if body.name == "CharacterBody2D":
 		if current_scene_name == "Level1":
 			get_tree().change_scene_to_file("res://level 2.tscn")
+			Globals.gravity_sign = 1
 		elif current_scene_name == "Level2":
 			get_tree().change_scene_to_file("res://level 3.tscn")
+			Globals.gravity_sign = 1
 		elif current_scene_name == "Level3":
 			get_tree().change_scene_to_file("res://level 4.tscn")
+			Globals.gravity_sign = 1
+		elif current_scene_name == "Level4":
+			get_tree().change_scene_to_file("res://level 5.tscn")
+			Globals.gravity_sign = 1
+			
+		elif current_scene_name == "Level5":
+			get_tree().change_scene_to_file("res://celebration.tscn")
+			Globals.gravity_sign = 1
 
 func _process(delta):
+	if Globals.deaths >= 5:
+		get_tree().change_scene_to_file("res://level 1.tscn")
+		
+		Globals.deaths = 0
+		Globals.gravity_sign = 1
 	if Input.is_action_just_pressed("reset"):
 		get_tree().reload_current_scene()
 		Globals.gravity_sign = 1

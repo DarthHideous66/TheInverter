@@ -13,6 +13,8 @@ func _ready():
 	
 
 func _physics_process(delta: float) -> void:
+	$CanvasLayer2/Label.text = "You have %d lives left" % [5 - Globals.deaths]
+
 	
 	if alive:
 		velocity.y += GRAVITY * delta
@@ -24,7 +26,7 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_just_pressed("g-switch") and grounded:
 			GRAVITY *= -1
 			Globals.gravity_sign *= -1
-		if current_scene_name == "Level3":
+		if current_scene_name in ["Level3", "Level4", "Level5"]:
 			if Input.is_action_just_pressed("timestop"):
 				if Globals.stopped == true:
 					Globals.stopped = false
@@ -49,7 +51,7 @@ func _physics_process(delta: float) -> void:
 				collider.apply_central_impulse(force)
 
 
-			elif collider.name == "TileMapLayer2":
+			elif collider.name in ["TileMapLayer2", "TileMapLayer3"]:
 				print("Player entered the deadly zone!")
 				alive = false
 				game_over()
@@ -57,8 +59,10 @@ func _physics_process(delta: float) -> void:
 
 
 func game_over():
-	print("GAME OVER")
+	print("GAME OVER Press R to reset")
 
 	$CanvasLayer/Label.text = "GAME OVER"
 	$CanvasLayer/Label.visible = true
+	Globals.deaths += 1
+	
 	set_physics_process(false)

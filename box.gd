@@ -8,7 +8,7 @@ func _ready():
 	current_scene_name = current_scene.name
 
 func _physics_process(_delta):
-	if current_scene_name in ["Level2", "Level3", "Level4"]:
+	if current_scene_name in ["Level2", "Level3", "Level4", "Level5"]:
 
 		if Input.is_action_just_pressed("anchor"):
 			anchor_active = !anchor_active
@@ -25,6 +25,5 @@ func _physics_process(_delta):
 		linear_velocity.x = 0
 
 	else:
-		# Normal gravity applied
 		var gravity_force = Globals.gravity_sign * 1500.0 * mass
 		apply_central_force(Vector2(0, gravity_force))
