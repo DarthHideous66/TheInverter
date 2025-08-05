@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc0spfrnv8ugj"]
+
+[ext_resource type="AudioStream" uid="uid://bdcsune8efqsm" path="res://Who Wants to Be a Millionaire Music Loop for 1 Hour!.mp3" id="1_1a72i"]
+
+[node name="Music" type="Node2D"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_1a72i")
+autoplay = true
